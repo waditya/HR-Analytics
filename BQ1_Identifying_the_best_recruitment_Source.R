@@ -21,3 +21,6 @@ summary(recruitment)
 
 #Using summary() didn't tell us much about the recruiting_source variable, because read_csv() imported it as a character vector. 
 #By using count() on the recruiting_source column to get more information.
+
+# See which recruiting sources the company has been using
+recruitment %>% count(recruiting_source)
