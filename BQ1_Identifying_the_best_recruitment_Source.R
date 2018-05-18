@@ -24,3 +24,8 @@ summary(recruitment)
 
 # See which recruiting sources the company has been using
 recruitment %>% count(recruiting_source)
+
+#Sales numbers by recruiting source
+# Find the average sales quota attainment
+recruitment %>%
+  summarize(avg_sales_quota_pct = mean(sales_quota_pct)) 
