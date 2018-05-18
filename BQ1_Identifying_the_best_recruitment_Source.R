@@ -44,3 +44,10 @@ avg_attrition <- recruitment %>%
 
 # Display the result
 avg_attrition
+
+# Load the ggplot2 package
+library(ggplot2)
+
+# Plot the bar chart
+ggplot(avg_sales, aes(x = recruiting_source, y = avg_sales_quota_pct)) +
+  geom_col()
