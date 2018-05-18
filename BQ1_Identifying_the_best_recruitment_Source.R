@@ -18,3 +18,6 @@ library(dplyr)
 #Take a look at the sales recruiting data, recruitment, with summary()
 # Get an overview of the recruitment data
 summary(recruitment)
+
+#Using summary() didn't tell us much about the recruiting_source variable, because read_csv() imported it as a character vector. 
+#By using count() on the recruiting_source column to get more information.
