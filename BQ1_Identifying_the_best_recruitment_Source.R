@@ -29,3 +29,9 @@ recruitment %>% count(recruiting_source)
 # Find the average sales quota attainment
 recruitment %>%
   summarize(avg_sales_quota_pct = mean(sales_quota_pct)) 
+
+# Find the average sales quota attainment for each recruiting source
+avg_sales <- recruitment %>% group_by(recruiting_source) %>% summarize(avg_sales_quota_pct = mean(sales_quota_pct))
+
+# Display the result
+avg_sales
