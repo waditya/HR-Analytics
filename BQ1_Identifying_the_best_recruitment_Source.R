@@ -12,3 +12,5 @@ head(recruitment)
 #Let us apply the HR analytics process to help them. 
 #Let us examine the recruiting channels in the data.
 
+# Load the dplyr package
+library(dplyr)
