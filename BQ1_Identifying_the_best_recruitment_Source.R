@@ -14,3 +14,7 @@ head(recruitment)
 
 # Load the dplyr package
 library(dplyr)
+
+#Take a look at the sales recruiting data, recruitment, with summary()
+# Get an overview of the recruitment data
+summary(recruitment)
