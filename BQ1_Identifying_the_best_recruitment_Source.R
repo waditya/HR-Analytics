@@ -35,3 +35,12 @@ avg_sales <- recruitment %>% group_by(recruiting_source) %>% summarize(avg_sales
 
 # Display the result
 avg_sales
+
+# Find the average attrition for the sales team, by recruiting source, sorted from lowest attrition rate to highest
+avg_attrition <- recruitment %>%
+  group_by(recruiting_source) %>% 
+  summarize(attrition_rate = mean(attrition)) %>% 
+  arrange(attrition_rate)
+
+# Display the result
+avg_attrition
